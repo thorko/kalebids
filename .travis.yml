@@ -1,0 +1,6 @@
+language: perl
+perl:
+  - "5.24"
+  - "5.22"
+install: cpanm Devel::Cover::Report::Coveralls Getopt::Long Log::Log4perl Pod::Usage Config::Simple Switch HTML::Strip File::Grep Test::More FindBin
+script: cover -test -report coveralls
